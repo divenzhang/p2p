@@ -1,0 +1,7 @@
+com\eloan\base\domain\Logininfo.class
+com\eloan\base\domain\BaseDomain.class
+com\eloan\base\service\ILogininfoService.class
+com\eloan\base\service\impl\LogininfoServiceImpl.class
+com\eloan\base\util\ResultJSON.class
+com\eloan\base\mapper\LogininfoMapper.class
+com\eloan\base\util\MD5.class
