@@ -2,6 +2,7 @@ package com.eloan.uiweb.controller;
 
 import com.eloan.base.domain.Logininfo;
 import com.eloan.base.service.ILogininfoService;
+import com.eloan.base.util.MD5;
 import com.eloan.base.util.ResultJSON;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -20,7 +21,7 @@ public class LoginController extends BaseController {
 	@ResponseBody
 	public ResultJSON login(String username, String password,HttpServletRequest request) {
 		ResultJSON json = new ResultJSON();
-		Logininfo login = this.loginInfoService.login(username, password,Logininfo.USERTYPE_NORMAL,request.getRemoteAddr());
+		Logininfo login = this.loginInfoService.login(username,password,Logininfo.USERTYPE_NORMAL,request.getRemoteAddr());
 		if (login != null) {
 			json.setSuccess(true);
 		} else {

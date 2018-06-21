@@ -2,6 +2,9 @@ package com.eloan.base.service;
 
 import com.eloan.base.domain.Logininfo;
 
+import java.util.List;
+import java.util.Map;
+
 public interface ILogininfoService {
     /**
      * 注册
@@ -31,4 +34,11 @@ public interface ILogininfoService {
      * 创建默认的管理员
      */
     void createDefaultAdmin();
+    /**
+     * 查询用户的id和name
+     * @param word
+     * @param userType
+     * @return
+     */
+    List<Map<String, Object>> autoComplate(String word, int userType);
 }

@@ -25,6 +25,9 @@ public class IpLog extends BaseDomain {
         return this.loginState==LOGINSTATE_FAILD?"登录失败":"登录成功" ;
     }
 
+    //mybatis先创建对象再使用,所以需要这个方法
+    public IpLog(){ super(); }
+
     public IpLog(String username,Date loginTime,String ip,int loginType, Long loginInfoId){
         super();
         this.username = username;

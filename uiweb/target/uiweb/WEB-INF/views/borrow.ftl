@@ -39,7 +39,7 @@
 							<#else>身份认证<span class="glyphicon glyphicon-ok" style="color:green;"></span></#if>
 						</li>
 						<li>
-							<#if (userinfo.authScore<creditBorrowScore) >
+							<#if (userinfo.authScore < creditBorrowScore) >
 								<a href="/userFile.do">材料认证分数达到${creditBorrowScore}分</a>
 								<span class="glyphicon glyphicon-remove" style="color:red;"></span>
 							<#else>材料认证分数达到30分<span class="glyphicon glyphicon-ok" style="color:green;"></span></#if>

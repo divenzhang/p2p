@@ -13,16 +13,16 @@
 	<!-- 支持注解驱动 -->
 	<mvc:annotation-driven />
 	<!-- 配置拦截器 -->
-	<!--<mvc:interceptors>-->
-		<!--<mvc:interceptor>-->
-			<!--<mvc:mapping path="/**" />-->
-			<!--<bean class="com.eloan.uiweb.interceptor.LoginInterceptor" />-->
-		<!--</mvc:interceptor>-->
-		<!--<mvc:interceptor>-->
-			<!--<mvc:mapping path="/**" />-->
-			<!--<bean class="com.eloan.uiweb.interceptor.AddGlobalUtilInterceptor" />-->
-		<!--</mvc:interceptor>-->
-	<!--</mvc:interceptors>-->
+	<mvc:interceptors>
+		<mvc:interceptor>
+			<mvc:mapping path="/**" />
+			<bean class="com.eloan.uiweb.interceptor.LoginInterceptor" />
+		</mvc:interceptor>
+		<mvc:interceptor>
+			<mvc:mapping path="/**" />
+			<bean class="com.eloan.uiweb.interceptor.AddGlobalUtilInterceptor" />
+		</mvc:interceptor>
+	</mvc:interceptors>
 
 	<!-- 注解扫描 -->
 	<context:component-scan base-package="com.eloan.uiweb.controller" />

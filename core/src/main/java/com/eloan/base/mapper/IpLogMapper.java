@@ -1,6 +1,7 @@
 package com.eloan.base.mapper;
 
 import com.eloan.base.domain.IpLog;
+import com.eloan.base.query.IpLogQueryObject;
 
 import java.util.List;
 
@@ -15,7 +16,7 @@ public interface IpLogMapper {
 
     int updateByPrimaryKey(IpLog record);
 
-//    int queryForCount(IpLogQueryObject qo);
+    int queryForCount(IpLogQueryObject qo);
 //
-//    List<IpLog> query(IpLogQueryObject qo);
+    List<IpLog> query(IpLogQueryObject qo);
 }

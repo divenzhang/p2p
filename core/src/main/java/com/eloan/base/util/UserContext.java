@@ -1,7 +1,7 @@
 package com.eloan.base.util;
 
 import com.eloan.base.domain.Logininfo;
-//import com.eloan.business.service.VerifyCode;
+import com.eloan.business.service.VerifyCode;
 import org.springframework.web.context.request.RequestContextHolder;
 import org.springframework.web.context.request.ServletRequestAttributes;
 
@@ -26,12 +26,12 @@ public class UserContext {
 				LOGIN_IN_SESSION);
 	}
 
-//	public static void putVerifyCode(VerifyCode code) {
-//		getRequest().getSession().setAttribute(VERIFYCODE_IN_SESSION, code);
-//	}
-//
-//	public static VerifyCode getVerifyCode() {
-//		return (VerifyCode) getRequest().getSession().getAttribute(
-//				VERIFYCODE_IN_SESSION);
-//	}
+	public static void putVerifyCode(VerifyCode code) {
+		getRequest().getSession().setAttribute(VERIFYCODE_IN_SESSION, code);
+	}
+
+	public static VerifyCode getVerifyCode() {
+		return (VerifyCode) getRequest().getSession().getAttribute(
+				VERIFYCODE_IN_SESSION);
+	}
 }

@@ -20,7 +20,7 @@ public class Logininfo extends BaseDomain {
 	private String password;
 	private int state = STATE_NORMAL;
 
-	private int userType;//用户类型
+	private int usertype;//用户类型
 	private boolean admin = false;
 
 }

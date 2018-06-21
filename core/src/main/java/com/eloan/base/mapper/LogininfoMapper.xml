@@ -7,7 +7,7 @@
 		<result column="password" jdbcType="VARCHAR" property="password" />
 		<result column="state" jdbcType="TINYINT" property="state" />
 		<result column="admin" property="admin" />
-		<result column="usertype" property="userType" />
+		<result column="usertype" property="usertype" />
 	</resultMap>
 	
 	<delete id="deleteByPrimaryKey" parameterType="java.lang.Long">
@@ -17,8 +17,8 @@
 	</delete>
 	
 	<insert id="insert" keyProperty="id" parameterType="com.eloan.base.domain.Logininfo" useGeneratedKeys="true">
-		insert into logininfo (username,password)
-		values	(#{username,jdbcType=VARCHAR},#{password,jdbcType=VARCHAR})
+		insert into logininfo (username,password,state,admin,usertype)
+		values	(#{username,jdbcType=VARCHAR},#{password,jdbcType=VARCHAR},#{state},#{admin},#{usertype})
 	</insert>
 	
 	<update id="updateByPrimaryKey" parameterType="com.eloan.base.domain.Logininfo">

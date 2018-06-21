@@ -31,7 +31,7 @@ public class RegisterController extends BaseController {
 	@ResponseBody
 	public ResultJSON checkUsername(String username) {
 		ResultJSON json = new ResultJSON();
-		json.setSuccess(this.logininfoService.checkUsername(username));
+		json.setSuccess(this.logininfoService.checkUsername(username,Logininfo.USERTYPE_NORMAL));
 		return json;
 	}
 	

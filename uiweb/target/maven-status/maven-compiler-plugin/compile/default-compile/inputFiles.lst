@@ -1,3 +1,14 @@
+D:\javabuild\p2p-my\uiweb\src\main\java\com\eloan\uiweb\controller\PersonalController.java
 D:\javabuild\p2p-my\uiweb\src\main\java\com\eloan\uiweb\controller\BaseController.java
+D:\javabuild\p2p-my\uiweb\src\main\java\com\eloan\uiweb\controller\UserFileController.java
+D:\javabuild\p2p-my\uiweb\src\main\java\com\eloan\uiweb\interceptor\AddGlobalUtilInterceptor.java
+D:\javabuild\p2p-my\uiweb\src\main\java\com\eloan\uiweb\util\UploadUtil.java
 D:\javabuild\p2p-my\uiweb\src\main\java\com\eloan\uiweb\controller\LoginController.java
+D:\javabuild\p2p-my\uiweb\src\main\java\com\eloan\uiweb\controller\BaseUserInfoController.java
+D:\javabuild\p2p-my\uiweb\src\main\java\com\eloan\uiweb\controller\BorrowController.java
+D:\javabuild\p2p-my\uiweb\src\main\java\com\eloan\uiweb\controller\IpLogController.java
+D:\javabuild\p2p-my\uiweb\src\main\java\com\eloan\uiweb\interceptor\LoginInterceptor.java
 D:\javabuild\p2p-my\uiweb\src\main\java\com\eloan\uiweb\controller\RegisterController.java
+D:\javabuild\p2p-my\uiweb\src\main\java\com\eloan\uiweb\controller\RealAuthController.java
+D:\javabuild\p2p-my\uiweb\src\main\java\com\eloan\uiweb\interceptor\RequiredLogin.java
+D:\javabuild\p2p-my\uiweb\src\main\java\com\eloan\uiweb\test\test.java
